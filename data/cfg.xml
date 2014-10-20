@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<game>
+	<frame title="Can not change it" windowUp="25" width="1168" height="680" 
+	padding="16" border="7" sizeRol="5" loseIdx="8">
+		<button w="161" h="112">
+			<start x="794" y="38" />
+			<userConfig x="955" y="38" />
+		</button>
+		<layer className="cn.ichudian.jason.tetris.ui.LayerBackGround" x="0" y="0" w="0" h="0"/>
+		<layer className="cn.ichudian.jason.tetris.ui.LayerDataBase" x="40" y="32" w="334" h="279"/>
+		<layer className="cn.ichudian.jason.tetris.ui.LayerDisk" x="40" y="343" w="334" h="277"/>
+		<layer className="cn.ichudian.jason.tetris.ui.LayerGame" x="414" y="32" w="334" h="588"/>
+		<layer className="cn.ichudian.jason.tetris.ui.LayerButton" x="788" y="32" w="334" h="124"/>
+		<layer className="cn.ichudian.jason.tetris.ui.LayerNext" x="788" y="188" w="176" h="116"/>
+		<layer className="cn.ichudian.jason.tetris.ui.LayerLevel" x="964" y="188" w="158" h="116"/>
+		<layer className="cn.ichudian.jason.tetris.ui.LayerPoint" x="788" y="336" w="334" h="160"/>
+		<layer className="cn.ichudian.jason.tetris.ui.LayerAbout" x="788" y="528" w="334" h="92"/>
+	</frame>
+	<system minX="0" maxX="9" minY="0" maxY="17" levelUp="20">
+		<rect round="true">
+			<point x="4" y="0" /><point x="3" y="0" /><point x="5" y="0" /><point x="6" y="0" />
+		</rect>
+		<rect round="true">
+			<point x="4" y="0" /><point x="3" y="0" /><point x="5" y="0" /><point x="4" y="1" />
+		</rect>
+		<rect round="true">
+			<point x="4" y="0" /><point x="3" y="0" /><point x="5" y="0" /><point x="3" y="1" />
+		</rect>
+		<rect round="true">
+			<point x="4" y="0" /><point x="5" y="0" /><point x="3" y="1" /><point x="4" y="1" />
+		</rect>
+		<rect round="false">
+			<point x="4" y="0" /><point x="5" y="0" /><point x="4" y="1" /><point x="5" y="1" />
+		</rect>
+		<rect round="true">
+			<point x="4" y="0" /><point x="3" y="0" /><point x="5" y="0" /><point x="5" y="1" />
+		</rect>
+		<rect round="true">
+			<point x="4" y="0" /><point x="3" y="0" /><point x="4" y="1" /><point x="5" y="1" />
+		</rect>
+	</system>
+	<data maxRow="5">
+		<dataA className="cn.ichudian.jason.tetris.dao.DataBase">
+			<param key="driver" value="com.mysql.jdbc.Driver"/>
+			<param key="dbUrl" value="jdbc:mysql://localhost:3306/tetris"/>
+			<param key="dbUser" value="root"/>
+			<param key="dbPwd" value="root"/>
+		</dataA>
+		<dataB className="cn.ichudian.jason.tetris.dao.DataDisk">
+			<param key="path" value="data/recode.dat"/>
+		</dataB>
+	</data>
+</game>
